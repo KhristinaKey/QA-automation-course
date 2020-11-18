@@ -6,15 +6,31 @@
 1. Open the main page.
 2. User Tap on the contact button on the top of page.
 3. User tap on the e-mail adress.
-4. Choose the mail client.
+4. On the opened pop up window hoose the mail client.
 5. Enter the valid login and pass.
 6. Try to send e-mail.
 
 #02
+1. Open the main page.
+2. User Tap on the contact button on the top of page.
+3. User tap on the e-mail adress.
+4. On the opened pop up window hoose the mail client.
+5. Enter the invalid login and pass.
+6. Try to send e-mail.
 
 #03
+1. Open the main page.
+2. User scrolling down the page.
+3. User tap on the e-mail adress.
+4. On the opened pop up window hoose the mail client.
+5. Enter the valid login and pass.
+6. Try to send e-mail.
 
 #04
+1. Open the main page.
+2. User scrolling down the page.
+3. User Tap on the contact button on the bottom of page.
+4. Try to tap on the phone number.
 
 #05
 
