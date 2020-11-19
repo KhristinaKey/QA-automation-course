@@ -33,6 +33,8 @@ Steps to reproduce:
 
 (For more details, please consider the attachment below.)
 
+(For more details, please consider the attachment below.)
+
 Expected result: The page with order form is opening.
 
 Environment: Production.
