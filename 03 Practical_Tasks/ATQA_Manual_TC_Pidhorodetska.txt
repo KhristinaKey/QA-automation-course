@@ -1,77 +1,196 @@
 5 test scenario for https://pravda.if.ua/
 
-*** 01 User can send the mail from the contact form on the site.
+***** TS_01 User can send the mail from the contact form on the site.
 
-#01
+#TC_01
 1. Open the main page.
-2. User Tap on the contact button on the top of page.
-3. User tap on the e-mail adress.
+2. User click on the contact button on the top of page.
+3. User click on the e-mail adress.
 4. On the opened pop up window hoose the mail client.
 5. Enter the valid login and pass.
 6. Try to send e-mail.
 
-#02
+#TC_02
 1. Open the main page.
-2. User Tap on the contact button on the top of page.
-3. User tap on the e-mail adress.
+2. User click on the contact button on the top of page.
+3. User click on the e-mail adress.
 4. On the opened pop up window hoose the mail client.
 5. Enter the invalid login and pass.
 6. Try to send e-mail.
 
-#03
+#TC_03
 1. Open the main page.
 2. User scrolling down the page.
-3. User tap on the e-mail adress.
+3. User click on the e-mail adress.
 4. On the opened pop up window hoose the mail client.
 5. Enter the valid login and pass.
 6. Try to send e-mail.
 
-#04
+#TC_04
 1. Open the main page.
 2. User scrolling down the page.
-3. User Tap on the contact button on the bottom of page.
-4. Try to tap on the phone number.
+3. User click on the contact button on the bottom of page.
+4. Try to click on the phone number.
 
-#05
+#TC_05
+1. Open the main page.
+2. User click on the contact button on the top of page.
+3. Try to enter the message into "Write to us@ form.
 
-*** 02 User can open the Social network pages on the site.
 
-#01
-#02
 
-#03
+***** TS_02 User can reach the Culture selection on the top of site
+#TC_01
+1. Open the main page.
+2. User click on the Culture button on the top of page.
+3. The user is redirected to cultural news
 
-#04
 
-#05
+#TC_02
+1. Open the main page.
+2. User click on the Culture button on the top of page.
+3. User is redirected to cultural news
+4. User scrolling down the page.
+5. Click on the choosen page number with cultural news.
 
-*** 03 User can order an ads on the site.
-#01
-#02
+#TC_03
+1. Open the main page.
+2. User click on the Culture button on the top of page.
+3. The user is redirected to cultural news
+4. Try to click on the last page in the list.
 
-#03
 
-#04
+#TC_04
+1. Open the main page.
+2. User click on the Culture button on the top of page.
+3. Choose and click on the news.
+4. Observe the images which were added to this topic. 
+5. Make sure that images displayed.
 
-#05
 
-*** 04 User can add a comment on the site.
-#01
-#02
+#TC_05
+1. Open the main page.
+2. User click on the Culture button on the top of page.
+3. Choose and click on the news.
+4. User scrolling down the page.
+5. Observe the "Next news" button.
+6. Make sure that the culture news is displayed.
 
-#03
 
-#04
+***** TS_03 User can order an ads on the site.
 
-#05
+#TC_01
+1. Open the main page.
+2. User scrolling down the page. 
+3. In the right down corner the "order advertising" button is present.
 
-*** 05 User can search vacancies on the site.
-#01
 
-#02
+#TC_02
+1. Open the main page.
+2. User scrolling down the page. 
+3. Click on the "order advertising" button.
+4. The page with Price is opening.
 
-#03
+#TC_03
+1. Open the main page.
+2. User click on the "advertising" button on the top of page.
+3. The page with Price is opening.
 
-#04
 
-#05
+
+#TC_04
+1. Open the main page.
+2. User click on the "advertising" button on the top of page.
+3. The page with Price is opening.
+4. Try to click on the e-mail adress.
+
+
+#TC_05
+1. Open the main page.
+2. User click on the "advertising" button on the top of page.
+3. The page with Price is opening.
+4. Try to click on the phone number.
+
+
+***** TS_04 User can add a comment on the site.
+
+#TC_01
+1. Open the main page.
+2. User click on the Criminal news button on the top of page.
+3. Choose any news from this sector and click on it.
+4. Scrolling down to the comment form.
+5. The Comment form is present on the page.
+
+#TC_02
+1. Open the main page.
+2. User click on the Criminal news button on the top of page.
+3. Choose any news from this sector and click on it.
+4. Scrolling down to the comment form.
+5. Try to write a message.
+
+#TC_03
+1. Open the main page.
+2. User click on the Criminal news button on the top of page.
+3. Choose any news from this sector and click on it.
+4. Scrolling down to the comment form.
+5. Fill in the message form.
+6. Click on "Send comment" button.
+
+
+#TC_04
+1. Open the main page.
+2. User click on the Criminal news button on the top of page.
+3. Choose any news from this sector and click on it.
+4. Scrolling down to the comment form.
+5. Fill in the message form.
+6. Fill in the e-mail field with invalid data (Ex:5544$#!4@gmail.com).
+7. Click on "Send comment" button.
+8. Error message should appears.
+
+
+#TC_05
+1. Open the main page.
+2. User click on the Criminal news button on the top of page.
+3. Choose any news from this sector and click on it.
+4. Scrolling down to the comment form.
+5. Click inside the message form.
+6. Click on "Send comment" button.
+7. "Please fill out required fields" message appears.
+
+
+
+*** TS_05 User can search news through the calendar
+
+#TC_01
+1. Open the main page.
+2. Scroll to the middle of the site.
+3. The Calendar is present on the site.
+
+
+#TC_02
+1. Open the main page.
+2. Scroll to the middle of the site.
+3. Choose the date on the calendar and click it.
+4. Only the news of that day should be displayed.
+
+#TC_03
+1. Open the main page.
+2. Scroll to the middle of the site.
+3. Click on the button with the name of the month.
+4. Try to change several month.
+
+
+
+#TC_04
+1. Open the main page.
+2. Scroll to the middle of the site.
+3. Click on the button with the name of the current month.
+4. Try to choose the future date and click it.
+
+
+#TC_05
+1. Open the main page.
+2. Scroll to the middle of the site.
+3. Choose the date on the calendar and click it.
+4. The choosen date is highlighted.
+
