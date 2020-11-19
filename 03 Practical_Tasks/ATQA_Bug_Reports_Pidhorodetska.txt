@@ -33,8 +33,6 @@ Steps to reproduce:
 
 (For more details, please consider the attachment below.)
 
-(For more details, please consider the attachment below.)
-
 Expected result: The page with order form is opening.
 
 Environment: Production.
@@ -46,6 +44,7 @@ Environment: Production.
 Title: The invalid data could be entered in the e-mail form on the site
 
 Summary: Upon reaching the e-mail form on the site, it can be noticed that the invalid data could be entered.
+
 Steps to reproduce:
 1. Open the main page.
 2. User click on the Culture button on the top of page.
@@ -54,6 +53,8 @@ Steps to reproduce:
 5. Click on the comment field.
 6. Enter the invalid data into appears field (Ex: 5544$#!4@gddmail.com.fff)
 7. Notice that the invalid data could be entered in the e-mail form on the site.
+
+(For more details, please consider the attachment below.)
 
 Expected result: The error message should be appears.
 Environment: Production.
