@@ -1,0 +1,61 @@
+***** Bug_01 *****
+
+Title:  The article button on the top of page has no functionality
+
+Summary: Upon reaching the article button on the top of page, 
+it can be noticed that the article button has no functionality
+
+Steps to reproduce:
+1. Open the main page.
+2. Click on the Articles button on the top of page.
+3. Notice that the Articles button has no functionalit
+
+(For more details, please consider the attachment below.)
+
+Expected result: The list of articles is opening.
+
+Environment: Production.
+
+
+
+***** Bug_02 *****
+
+Title:  The "order advertising" button on the bottom of main page has no functionality
+
+Summary: Upon reaching the "order advertising" button on the bottom of main page,
+it can be noticed that this button has no fuctionality.
+
+Steps to reproduce:
+1. Open the main page.
+2. Click on the "order advertising" button on the bottom of main page.
+3. Observe that the page is scrolling to the top of site.
+4. Notice that the "order advertising" button on the bottom of main page has no functionality
+
+(For more details, please consider the attachment below.)
+
+Expected result: The page with order form is opening.
+
+Environment: Production.
+
+
+
+***** Bug_03 *****
+
+Title: The invalid data could be entered in the e-mail form on the site
+
+Summary: Upon reaching the e-mail form on the site, it can be noticed that the invalid data could be entered.
+Steps to reproduce:
+1. Open the main page.
+2. User click on the Culture button on the top of page.
+3. Choose and click on the news.
+4. Scroll page down to the Comment form.
+5. Click on the comment field.
+6. Enter the invalid data into appears field (Ex: 5544$#!4@gddmail.com.fff)
+
+Expected result: The error message should be appears.
+Environment: Production.
+
+
+
+
+
