@@ -22,9 +22,10 @@ Steps to reproduce:
 TC_04
 Steps to reproduce:
 1. Open the main page.
-2. Click on the Help button.
-3. Choose the folder and click on it.
-4. The Sign in form is opening.
+2. Scroll the page down.
+3. Click on the Help button.
+4. Choose the folder and click on it.
+5. The Sign in form is opening.
 
 TC_05
 Steps to reproduce:
