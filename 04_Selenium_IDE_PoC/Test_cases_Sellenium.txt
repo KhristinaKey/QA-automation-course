@@ -1,7 +1,7 @@
 TC_01
 Steps to reproduce:
 1. Open the main page.
-2. Click on the Todays deals.
+2. Click on the Todays deals block on the main page.
 3. Click on the Books check box.
 4. The Books list is opening.
 
