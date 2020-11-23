@@ -1,0 +1,323 @@
+{
+  "id": "ad9d7c3b-f6eb-424c-ba19-f62758f597b2",
+  "version": "2.0",
+  "name": "Amazon_Project",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "4c035650-f113-4be7-895c-550a8d3f6070",
+    "name": "TC_02",
+    "commands": [{
+      "id": "9094667e-debd-4519-ae2c-bc5293493a76",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "682213a4-d98b-4c40-899a-02ff90306598",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "290441c4-d260-4f11-bf89-601f61bf59da",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-cart-count",
+      "targets": [
+        ["id=nav-cart-count", "id"],
+        ["css=#nav-cart-count", "css:finder"],
+        ["xpath=//span[@id='nav-cart-count']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-cart-count-container']/span", "xpath:idRelative"],
+        ["xpath=//a[4]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1edc191-2654-4da4-bc50-faebed761aa0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-orders",
+      "targets": [
+        ["id=nav-orders", "id"],
+        ["css=#nav-orders", "css:finder"],
+        ["xpath=//a[@id='nav-orders']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/css/order-history?ref_=nav_orders_first')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "842b3f27-60ca-4037-9350-165ec5c76c37",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=nav-orders",
+      "targets": [
+        ["id=nav-orders", "id"],
+        ["css=#nav-orders", "css:finder"],
+        ["xpath=//a[@id='nav-orders']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/css/order-history?ref_=nav_orders_first')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6f4d840-e971-486a-b804-53e04bfd10cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#a-autoid-1-announce > .a-size-base-plus",
+      "targets": [
+        ["css=#a-autoid-1-announce > .a-size-base-plus", "css:finder"],
+        ["xpath=//a[@id='a-autoid-1-announce']/span", "xpath:idRelative"],
+        ["xpath=//span[2]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4da8fe82-32eb-40e7-8a6c-73ad4272364f",
+    "name": "TC_03",
+    "commands": [{
+      "id": "026f634a-4ac8-4c02-a8b6-86bc5bd068ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f7fb571-c0d7-4d12-ad9c-6ae7878026d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfb6d739-471b-4759-90ff-2580d81f720a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blog",
+      "targets": [
+        ["linkText=Blog", "linkText"],
+        ["css=.navFooterLinkCol:nth-child(1) li:nth-child(2) > .nav_a", "css:finder"],
+        ["xpath=//a[contains(text(),'Blog')]", "xpath:link"],
+        ["xpath=//div[@id='navFooter']/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://blog.aboutamazon.com/?utm_source=gateway&utm_medium=footer')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Blog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b6c4e0-4821-4061-9cd6-8c9e65b36fd9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Amazon receives award for veteran, military spouse hiring",
+      "targets": [
+        ["linkText=Amazon receives award for veteran, military spouse hiring", "linkText"],
+        ["css=.HubListCarousel-items-item:nth-child(2) .HubPromoSimpleDate-title > .Link", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/hiringourheroes/status/1329231255137824769/photo/1')]", "xpath:href"],
+        ["xpath=//bsp-hublistcarousel/div[2]/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Amazon receives award for veteran, military spouse hiring')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7deefe3d-8f3f-415c-81ae-2210735cbe3b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Amazon receives award for veteran, military spouse hiring",
+      "targets": [
+        ["linkText=Amazon receives award for veteran, military spouse hiring", "linkText"],
+        ["css=.HubListCarousel-items-item:nth-child(2) .HubPromoSimpleDate-title > .Link", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/hiringourheroes/status/1329231255137824769/photo/1')]", "xpath:href"],
+        ["xpath=//bsp-hublistcarousel/div[2]/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Amazon receives award for veteran, military spouse hiring')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72b86b58-9ea6-42e4-96da-bf14090edcb6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.HubPromo-media .Image",
+      "targets": [
+        ["css=.HubPromo-media .Image", "css:finder"],
+        ["xpath=//img[@alt=\"Book covers from Amazon's best books of the year, 2020\"]", "xpath:img"],
+        ["xpath=//a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d93205d-3eb3-4f5e-a423-df952f500fb5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.HubPromo-media .Image",
+      "targets": [
+        ["css=.HubPromo-media .Image", "css:finder"],
+        ["xpath=//img[@alt=\"Book covers from Amazon's best books of the year, 2020\"]", "xpath:img"],
+        ["xpath=//a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccae66ea-8180-4371-b60b-80aaa7a97cc3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.HubPromo-description span",
+      "targets": [
+        ["css=.HubPromo-description span", "css:finder"],
+        ["xpath=//div[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Given the tumult of this past year, we’ve needed stories more than ever. And fortunately, while 2020 has fallen wildly short of many expectations, it’s been a boon for readers who enjoy great books. Click to discover Amazon’s Best Books of the Year.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "840a9c9f-348f-4969-8859-5d7299406767",
+    "name": "TC_04",
+    "commands": [{
+      "id": "cc7dd0a5-7688-4f54-938b-506dc748aa3d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "456ae901-b506-4ee4-9224-e92f3fde6906",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bea92057-de1a-4a76-a12e-2d2b81206aef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Help",
+      "targets": [
+        ["linkText=Help", "linkText"],
+        ["css=.nav_last:nth-child(8) > .nav_a", "css:finder"],
+        ["xpath=//a[contains(text(),'Help')]", "xpath:link"],
+        ["xpath=//div[@id='navFooter']/div/div/div[7]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/help/customer/display.html?ie=UTF8&nodeId=508510&ref_=footer_gw_m_b_he')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Help')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7026d93-7e74-4ba8-9ac0-668c42b712ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-row:nth-child(1) > .a-column:nth-child(1) li:nth-child(1) > .a-list-item:nth-child(1)",
+      "targets": [
+        ["css=.a-row:nth-child(1) > .a-column:nth-child(1) li:nth-child(1) > .a-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Track packages')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "336b6d25-7b4e-4e06-a2df-0d3f4dc1a841",
+    "name": "TC_01",
+    "commands": [{
+      "id": "33fbf149-2904-4300-b49e-fd7449b35d57",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7f743cc-c655-4d83-9197-15babf2acac1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4c3cc11-e05e-4d9c-80fb-f43b8128b3f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Today's Deals",
+      "targets": [
+        ["linkText=Today's Deals", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "770b2ada-66a9-4f58-a3fe-849275ef5cb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-row > .a-declarative:nth-child(6) input",
+      "targets": [
+        ["css=.a-row > .a-declarative:nth-child(6) input", "css:finder"],
+        ["xpath=(//input[@name=''])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='widgetFilters']/div/div[2]/span[6]/div/label/input", "xpath:idRelative"],
+        ["xpath=//span[6]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf47e82-6844-4c74-ab83-68eedfbe47c2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,414)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "caa251b7-2a36-45af-b3e1-94d994024b03",
+    "name": "TC_05",
+    "commands": [{
+      "id": "3e0fbe27-54bc-4f5d-9405-cbcce4ca7d97",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "464536ed-d7e6-4d23-9e70-4c05f48d76ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d128972-ba38-4ae5-bd4c-41101f1fa7ac",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cropped-image-map-size:nth-child(2) img",
+      "targets": [
+        ["css=.cropped-image-map-size:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Black Friday Deals']", "xpath:img"],
+        ["xpath=//div[@id='XeuSK2NJko2Xy0NzAbN4OQ']/div/div/span/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div/div/div/span/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37e28854-4ae2-432e-8b1b-f53c278c2238",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cropped-image-map-size:nth-child(2) img",
+      "targets": [
+        ["css=.cropped-image-map-size:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Black Friday Deals']", "xpath:img"],
+        ["xpath=//div[@id='XeuSK2NJko2Xy0NzAbN4OQ']/div/div/span/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div/div/div/span/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7e9aaea3-d589-4d1c-bef3-1aa02188bb3b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "edb24fa9-0ed9-44a5-9dc8-60a182e24332",
+    "name": "Practical_task",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["336b6d25-7b4e-4e06-a2df-0d3f4dc1a841", "4c035650-f113-4be7-895c-550a8d3f6070", "4da8fe82-32eb-40e7-8a6c-73ad4272364f", "840a9c9f-348f-4969-8859-5d7299406767", "caa251b7-2a36-45af-b3e1-94d994024b03"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": []
+}
