@@ -1,0 +1,36 @@
+TC_01
+Steps to reproduce:
+1. Open the main page.
+2. Click on the Todays deals block on the main page.
+//div[@id="nav-xshop"]
+
+3. Click on the Books check box.
+4. The Books list is opening.
+
+TC_02
+Steps to reproduce:
+1. Open the main page.
+2. Click on Court buttonon the tob right corner.
+3. Click on Sign Up button.
+4. The Sign form is opening.
+
+TC_03
+Steps to reproduce:
+1. Open the main page.
+2. Scroll the page down.
+3. Click on the Blog button.
+4. The Amazon's Blog is opening.
+
+TC_04
+Steps to reproduce:
+1. Open the main page.
+2. Scroll the page down.
+3. Click on the Help button.
+4. Choose the folder and click on it.
+5. The Sign in form is opening.
+
+TC_05
+Steps to reproduce:
+1. Open the main page.
+2. Click on the Black Friday Deals block on the top of page.
+3. The Black Friday Deals list is opening.
