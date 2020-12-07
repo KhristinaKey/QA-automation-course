@@ -1,24 +1,30 @@
+Не всюди унікальний, але ск змогла стільки знайшла)
+
 TC_01
 Steps to reproduce:
 1. Open the main page.
-2. Click on the Todays deals block on the main page.
-//div[@id="nav-xshop"]
-
-3. Click on the Books check box.
-4. The Books list is opening.
+2. Click on the Holiday deals block on the main page.
+//div[@id="desktop-banner"]
+3. Click on the Prime Early access Deals button.
+//div[@class="a-row a-spacing-micro a-spacing-top-none"]//a[@class="a-link-normal"]
+4. The Prime Early accesslist is opening.
 
 TC_02
 Steps to reproduce:
 1. Open the main page.
-2. Click on Court buttonon the tob right corner.
+2. Click on Cart button on the top right corner.
+//div[@id="nav-cart-count-container"]
 3. Click on Sign Up button.
+//div[@class="a-row a-spacing-medium a-spacing-top-medium sc-sign-in"]//a[@id="a-autoid-1-announce"]
 4. The Sign form is opening.
+
 
 TC_03
 Steps to reproduce:
 1. Open the main page.
 2. Scroll the page down.
 3. Click on the Blog button.
+//div[@class"class="navFooterLinkCol navAccessibility" and @class="nav_a"]
 4. The Amazon's Blog is opening.
 
 TC_04
@@ -26,7 +32,9 @@ Steps to reproduce:
 1. Open the main page.
 2. Scroll the page down.
 3. Click on the Help button.
-4. Choose the folder and click on it.
+//div[@class"class="navFooterLinkCol navAccessibility"]//a[contains(text(),'Help')]//div[@class="nav_a"]
+4. Choose the Your orders folder and click on it.
+//div[@class="a-column a-span4 ss-rich-card-column"]//img[@alt="Your Orders"]
 5. The Sign in form is opening.
 
 TC_05
