@@ -12,9 +12,9 @@ TC_02
 Steps to reproduce:
 1. Open the main page https://www.amazon.com.
 2. Click on Cart button on the top right corner.
-//div[@id="nav-cart-count-container"]
-3. Click on Sign Up button.
-//div[@class="a-row a-spacing-medium a-spacing-top-medium sc-sign-in"]//a[@id="a-autoid-1-announce"]
+//span[@id='nav-cart-count']
+3. After Opening a Cart Page click on Sign Up button.
+//span[contains(text(),'Sign up now')]
 4. The Sign form is opening.
 
 
@@ -22,22 +22,23 @@ TC_03
 Steps to reproduce:
 1. Open the main page https://www.amazon.com.
 2. Scroll the page down.
-3. Click on the Blog button.
-//div[@class"class="navFooterLinkCol navAccessibility" and @class="nav_a"]
-4. User is redirected to the Blog Page.
+3. Click on the Help button.
+//a[contains(text(),'Help')]
+4. The Help Page is opened.
+
 
 TC_04
 Steps to reproduce:
 1. Open the main page https://www.amazon.com.
 2. Scroll the page down.
-3. Click on the Help button.
-//div[@class"class="navFooterLinkCol navAccessibility"]//a[contains(text(),'Help')]//div[@class="nav_a"]
-4. Choose the Your orders folder and click on it.
-//div[@class="a-column a-span4 ss-rich-card-column"]//img[@alt="Your Orders"]
-5. The Sign in form is opening.
+3. Click on the Blog button.
+//div[@class"class="navFooterLinkCol navAccessibility" and @class="nav_a"]
+4. User is redirected to the Blog Page.
+
 
 TC_05
 Steps to reproduce:
 1. Open the main page https://www.amazon.com.
 2. Click on the Gift Cards block on the top of page.
+//a[contains(text(),'Gift Cards')]
 3. The Gift Cards list is opening.

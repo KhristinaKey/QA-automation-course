@@ -13,8 +13,12 @@ public class Header {
         this.driver = driver;
     }
     public Header setDealsAndPromotions(String dealsAndPromotions) {
+        driver.findElement(By.xpath(todayDealsLocator)).click();
         return this;
     }
-
+    public <T extends Page> T clickOnButton(Class<T> clazz) throws Exception {
+        driver.findElement(By.xpath(todayDealsLocator)).click();
+        return PageFactory.newPage(driver, clazz);
+    }
 }
 

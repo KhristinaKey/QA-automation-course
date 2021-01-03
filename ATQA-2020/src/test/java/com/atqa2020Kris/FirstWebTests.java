@@ -48,7 +48,7 @@ public class FirstWebTests extends BaseTest {
         //Then Deals and Deals and Promotions Page is opened.
         Assert.assertTrue(dealsAndPromotionsPage.isItDealsAndPromotionsPage(dealsAndPromotions),"Title is not valid!!!!!!");
         //driver.findElement(By.xpath("//div[@class='fst-h1-st pageBanner']//b[contains(text(),'Deals and Promotions')]")).getText().equals(DEALS_PAGE_TITLE)
-       //  System.out.println("01_Deals");
+        //  System.out.println("01_Deals");
         }
 
         // 02 -------------------------------------------------------------
@@ -59,9 +59,10 @@ public class FirstWebTests extends BaseTest {
         //Given user opens a browser need provides a valid url
 
         //when user clicks on Cart button on the top right corner.
+        //span[@id='nav-cart-count']
 
-        //And Clicks on Sign Up button.
-
+        //And After Opening a Cart Page click on Sign Up button.
+        //span[contains(text(),'Sign up now')]
         //Then Sign form is opened
         Assert.assertTrue(driver.findElement(By.xpath("//a[contains(text(),'Today's Deals')]")).isDisplayed());
         System.out.println("02_Cart_Button_Test");
@@ -74,7 +75,7 @@ public class FirstWebTests extends BaseTest {
         //Given user opens a browser nd provides a valid url
 
         //when user clicks on the Help button down the page
-
+        //a[contains(text(),'Help')]
         //And
 
         //Then user is redirected to the Help Page.

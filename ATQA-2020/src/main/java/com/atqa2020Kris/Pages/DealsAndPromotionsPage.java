@@ -13,7 +13,7 @@ public class DealsAndPromotionsPage extends Page{
         super(driver);
     }
     public boolean isItDealsAndPromotionsPage(String dealsAndPromotions) {
-        return driver.findElement(By.xpath(todayDealsLocator)).click());
+        return driver.findElement(By.xpath(todayDealsLocator)).click();
     }
 
 }
