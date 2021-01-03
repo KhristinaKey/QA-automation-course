@@ -2,16 +2,15 @@
 
 TC_01
 Steps to reproduce:
-1. Open the main page.
-2. Click on the Holiday deals block on the main page.
-//div[@id="desktop-banner"]
-3. Click on the Prime Early access Deals button.
-//div[@class="a-row a-spacing-micro a-spacing-top-none"]//a[@class="a-link-normal"]
-4. The Prime Early accesslist is opening.
+1. Open the main page https://www.amazon.com.
+2. Click on the Todays deals block on the main page.
+"//a[contains(text(), 'Today's Deals')]"
+3. The Deals and Promotions Page is opened.
+"//b[contains(text(),'Deals and Promotions')]"
 
 TC_02
 Steps to reproduce:
-1. Open the main page.
+1. Open the main page https://www.amazon.com.
 2. Click on Cart button on the top right corner.
 //div[@id="nav-cart-count-container"]
 3. Click on Sign Up button.
@@ -21,15 +20,15 @@ Steps to reproduce:
 
 TC_03
 Steps to reproduce:
-1. Open the main page.
+1. Open the main page https://www.amazon.com.
 2. Scroll the page down.
 3. Click on the Blog button.
 //div[@class"class="navFooterLinkCol navAccessibility" and @class="nav_a"]
-4. The Amazon's Blog is opening.
+4. User is redirected to the Blog Page.
 
 TC_04
 Steps to reproduce:
-1. Open the main page.
+1. Open the main page https://www.amazon.com.
 2. Scroll the page down.
 3. Click on the Help button.
 //div[@class"class="navFooterLinkCol navAccessibility"]//a[contains(text(),'Help')]//div[@class="nav_a"]
@@ -39,6 +38,6 @@ Steps to reproduce:
 
 TC_05
 Steps to reproduce:
-1. Open the main page.
-2. Click on the Black Friday Deals block on the top of page.
-3. The Black Friday Deals list is opening.
+1. Open the main page https://www.amazon.com.
+2. Click on the Gift Cards block on the top of page.
+3. The Gift Cards list is opening.
