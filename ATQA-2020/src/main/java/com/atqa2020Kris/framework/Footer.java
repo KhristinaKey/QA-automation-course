@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class Footer {
 
     protected RemoteWebDriver driver;
-    private String BlogLocator = "";
+    private String BlogLocator = "//a[contains(text(),'Blog')]";
 
     public Footer(final RemoteWebDriver driver) {
         this.driver = driver;

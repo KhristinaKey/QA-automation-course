@@ -16,9 +16,6 @@ import static org.apache.commons.lang3.SystemUtils.*;
 
 public class FirstWebTests extends BaseTest {
 
-
-
-    private static String DEALS_PAGE_TITLE = "Deals and Promotions";
     private HomePage homePage;
     private BlogPage blogPage;
     private HelpPage helpPage;
@@ -30,9 +27,7 @@ public class FirstWebTests extends BaseTest {
     public void setupTest() {
         driver.get("https://amazon.com");
         homePage = new HomePage(driver);
-      // homePage = new HomePage(driver);
-      // HomePage homePage = new HomePage(driver);
-    }
+       }
       //  public EarlyAccessPage(RemoteWebDriver driver) { super(driver); }
 */
       // 01 --------------------------------------------------------
@@ -68,7 +63,6 @@ public class FirstWebTests extends BaseTest {
         System.out.println("02_Cart_Button_Test");
     }
 */
-
     // 03 -------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 2)
     public void mainUrlTest() {
@@ -99,7 +93,6 @@ public class FirstWebTests extends BaseTest {
         System.out.println("04_Test");
     }
     */
-
 
     // 05 --------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 4)
