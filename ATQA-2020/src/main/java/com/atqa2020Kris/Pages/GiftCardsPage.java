@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class GiftCardsPage extends Page{
     public Header header;
-    private String giftCardsPageLocator = "//a[contains(text(),'Gift Cards')]";
+    private String giftCardsPageTitleLocator = "//a[contains(text(),'Gift Cards')]";
 
     public GiftCardsPage(RemoteWebDriver driver) {
         super(driver);

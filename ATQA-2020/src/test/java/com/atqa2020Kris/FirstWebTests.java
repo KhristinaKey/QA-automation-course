@@ -64,7 +64,7 @@ public class FirstWebTests extends BaseTest {
 
     // 03 -------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 2)
-    public void mainUrlTest() {
+    public void mainUrlTest() throws Exception {
         //Given user opens a browser nd provides a valid url
 
         //when user clicks on the Help button down the page
@@ -93,7 +93,7 @@ public class FirstWebTests extends BaseTest {
 
     // 05 --------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 4)
-    public void mainUrlTest() {
+    public void mainUrlTest() throws Exception {
         //Given user opens a browser nd provides a valid url
 
         //when user clicks on the Gift Cards block on the top of page.

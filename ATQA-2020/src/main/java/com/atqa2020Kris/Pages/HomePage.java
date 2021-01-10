@@ -24,10 +24,19 @@ public class HomePage extends Page{
        return header.setDealsAndPromotions(dealsAndPromotions).clickOnDealsButton(clazz);
     }
 
-    public HelpPage navigateToHelpPage() throws Exception {
-        return footer.navigateToHelpPage();
-    }
     public GiftCardsPage navigateToGiftCardsPage() throws Exception {
         return header.navigateToGiftCardsPage();
+    }
+
+    public CartPage navigateToCartPage() throws Exception {
+        return header.navigateToCartPage();
+    }
+
+    public DealsAndPromotionsPage navigateToDealsAndPromotionsPage() throws Exception {
+        return header.navigateToDealsAndPromotionsPage();
+    }
+
+    public HelpPage navigateToHelpPage() throws Exception {
+        return footer.navigateToHelpPage();
     }
 }
