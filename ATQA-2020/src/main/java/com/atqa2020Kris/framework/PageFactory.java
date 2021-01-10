@@ -7,6 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.lang.reflect.Constructor;
 
 public class PageFactory {
+
     public static <T extends Page>T newPage(RemoteWebDriver driver, Class<T> clazz) throws Exception {
     return getNewInstance(driver, clazz);
     }

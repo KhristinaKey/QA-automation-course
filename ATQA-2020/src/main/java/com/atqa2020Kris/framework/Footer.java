@@ -8,14 +8,14 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class Footer {
 
     protected RemoteWebDriver driver;
-    private String BlogLocator = "//a[contains(text(),'Blog')]";
+    private String blogPageTitleLocator = "//a[contains(text(),'Blog')]";
 
     public Footer(final RemoteWebDriver driver) {
         this.driver = driver;
     }
 
     public BlogPage navigateToBlogPage() throws Exception {
-        driver.findElement(By.xpath(BlogLocator)).click();
+        driver.findElement(By.xpath(blogPageTitleLocator)).click();
         return PageFactory.newPage(driver, BlogPage.class);
     }
 }

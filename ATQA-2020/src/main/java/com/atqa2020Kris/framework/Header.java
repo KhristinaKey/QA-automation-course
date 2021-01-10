@@ -9,7 +9,7 @@ public class Header {
 
     private String todayDealsLocator = "//div[@id='nav-xshop']//a[@href='/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl']";
 
-    public Header(RemoteWebDriver driver) {
+    public Header(final RemoteWebDriver driver) {
         this.driver = driver;
     }
     public Header setDealsAndPromotions(String dealsAndPromotions) {

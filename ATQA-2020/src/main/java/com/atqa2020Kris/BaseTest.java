@@ -1,5 +1,4 @@
 package com.atqa2020Kris;
-
 import com.atqa2020Kris.listeners.TestListener;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -23,10 +22,10 @@ public abstract class BaseTest {
         }
 
         driver = new ChromeDriver();
-      //  driver.manage().window().maximize();
+       // driver.manage().window().maximize();
         System.out.println("setup");
 
-        driver.get("https://amazon.com");
+        // driver.get("https://amazon.com");
         //  homePage = new HomePage(driver);
         // HomePage homePage = new HomePage(driver);
     }

@@ -13,7 +13,6 @@ import org.testng.annotations.*;
 import static com.atqa2020Kris.Pages.BlogPage.*;
 import static org.apache.commons.lang3.SystemUtils.*;
 
-
 public class FirstWebTests extends BaseTest {
 
     private HomePage homePage;
@@ -23,13 +22,14 @@ public class FirstWebTests extends BaseTest {
 
     private DealsAndPromotionsPage dealsAndPromotionsPage;
 
-    /*@BeforeMethod(alwaysRun = true)
+    @BeforeMethod(alwaysRun = true)
     public void setupTest() {
         driver.get("https://amazon.com");
         homePage = new HomePage(driver);
        }
       //  public EarlyAccessPage(RemoteWebDriver driver) { super(driver); }
-*/
+
+
       // 01 --------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 0)
         public void TodayDealsTest() {
@@ -48,21 +48,21 @@ public class FirstWebTests extends BaseTest {
 
         // 02 -------------------------------------------------------------
 
-   /* @Test(groups = "main", suiteName = "ui", priority = 1)
+    @Test(groups = "main", suiteName = "ui", priority = 1)
         public void SignButtonTest() {
 
         //Given user opens a browser need provides a valid url
 
         //when user clicks on Cart button on the top right corner.
-        //span[@id='nav-cart-count']
+
 
         //And After Opening a Cart Page click on Sign Up button.
         //span[contains(text(),'Sign up now')]
         //Then Sign form is opened
-        Assert.assertTrue(driver.findElement(By.xpath("//a[contains(text(),'Today's Deals')]")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath(")).isDisplayed());
         System.out.println("02_Cart_Button_Test");
     }
-*/
+
     // 03 -------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 2)
     public void mainUrlTest() {
@@ -77,22 +77,20 @@ public class FirstWebTests extends BaseTest {
         System.out.println("03_Test");
     }
 
-    /*
     // 04 -------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 3)
     public void BlogPageTest() throws Exception {
         //Given user opens a browser nd provides a valid url
 
         //when user Clicks on the Blog link
-
+        homePage.navigateToBlogPage();
         //And
 
         //Then user is redirected to the Blog Page.
-
-        Assert.assertTrue(blogPage.isTitleCorrect(),"Title is not correct!!!");
+        Assert.assertTrue(blogPage.isTitleCorrect(), "Title is not correct!!!!");
         System.out.println("04_Test");
     }
-    */
+
 
     // 05 --------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 4)
@@ -104,15 +102,15 @@ public class FirstWebTests extends BaseTest {
         //And
 
         //Then the Gift Cards list Page is opened
-        Assert.assertTrue(giftCards.isTitleCorrect(),"Title is not correct!!!");
+        Assert.assertTrue(giftCardsPage.isTitleCorrect(),"Title is not correct!!!");
         System.out.println("05_Test");
     }
 
-    @AfterMethod(alwaysRun = true)
+   /* @AfterMethod(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
         System.out.println("teardown");
-    }
+    }*/
 }

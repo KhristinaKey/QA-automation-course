@@ -1,16 +1,18 @@
 package com.atqa2020Kris.Pages;
 
+import com.atqa2020Kris.framework.Footer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BlogPage extends Page{
 
+    public Footer footer;
     private static String BLOG_PAGE_TITLE = "Who We Are";
-    private String blogPageTitleLocator = "@/html/body/header/div[2]/ps-header/div/div[2]/div[2]/div[3]/div[1]/nav/ul/li[1]/div/div/div[1]/a";
-
+    private String blogPageTitleLocator = "//a[contains(text(),'Blog')]";
 
     public BlogPage(RemoteWebDriver driver) {
         super(driver);
+        this.footer = new Footer(driver);
     }
 
     public boolean isTitleCorrect() {

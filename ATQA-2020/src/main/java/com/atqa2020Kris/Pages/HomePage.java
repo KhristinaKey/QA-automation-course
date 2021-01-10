@@ -14,11 +14,12 @@ public class HomePage extends Page{
         super(driver);
         this.header = new Header(driver);
         this.footer = new Footer(driver);
-
     }
-    public BlogPage navigateToBlogPage() throws Exception {
+
+    public BlogPage navigateToBlogPage () throws Exception {
        return footer.navigateToBlogPage();
     }
+
     public <T extends Page> T clickOnButton(Class<T> clazz, String dealsAndPromotions) {
        return header.setDealsAndPromotions(dealsAndPromotions).clickOnDealsButton(clazz);
     }
