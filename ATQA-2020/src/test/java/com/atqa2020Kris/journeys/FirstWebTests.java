@@ -1,5 +1,6 @@
-package com.atqa2020Kris;
+package com.atqa2020Kris.journeys;
 
+import com.atqa2020Kris.BaseTest;
 import com.atqa2020Kris.Pages.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
