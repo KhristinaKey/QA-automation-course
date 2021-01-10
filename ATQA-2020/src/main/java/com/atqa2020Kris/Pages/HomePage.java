@@ -23,4 +23,11 @@ public class HomePage extends Page{
     public <T extends Page> T clickOnButton(Class<T> clazz, String dealsAndPromotions) {
        return header.setDealsAndPromotions(dealsAndPromotions).clickOnDealsButton(clazz);
     }
+
+    public HelpPage navigateToHelpPage() throws Exception {
+        return footer.navigateToHelpPage();
+    }
+    public GiftCardsPage navigateToGiftCardsPage() throws Exception {
+        return header.navigateToGiftCardsPage();
+    }
 }

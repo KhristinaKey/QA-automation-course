@@ -19,7 +19,7 @@ public class FirstWebTests extends BaseTest {
     private BlogPage blogPage;
     private HelpPage helpPage;
     private GiftCardsPage giftCardsPage;
-
+    private CartPage cartPage;
     private DealsAndPromotionsPage dealsAndPromotionsPage;
 
     @BeforeMethod(alwaysRun = true)
@@ -49,13 +49,12 @@ public class FirstWebTests extends BaseTest {
         // 02 -------------------------------------------------------------
 
     @Test(groups = "main", suiteName = "ui", priority = 1)
-        public void SignButtonTest() {
+        public void SignButtonTest() throws Exception {
 
         //Given user opens a browser need provides a valid url
 
         //when user clicks on Cart button on the top right corner.
-
-
+        homePage.navigateToCartPage();
         //And After Opening a Cart Page click on Sign Up button.
         //span[contains(text(),'Sign up now')]
         //Then Sign form is opened
@@ -69,7 +68,7 @@ public class FirstWebTests extends BaseTest {
         //Given user opens a browser nd provides a valid url
 
         //when user clicks on the Help button down the page
-
+        homePage.navigateToHelpPage();
         //And
 
         //Then user is redirected to the Help Page.
@@ -98,7 +97,7 @@ public class FirstWebTests extends BaseTest {
         //Given user opens a browser nd provides a valid url
 
         //when user clicks on the Gift Cards block on the top of page.
-
+        homePage.navigateToGiftCardsPage();
         //And
 
         //Then the Gift Cards list Page is opened
