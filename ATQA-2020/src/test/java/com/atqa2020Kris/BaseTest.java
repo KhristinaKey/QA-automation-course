@@ -24,7 +24,7 @@ public abstract class BaseTest {
         driver = new ChromeDriver();
        // driver.manage().window().maximize();
         System.out.println("setup");
-
+        //TODO please remove redundant lines of code
         // driver.get("https://amazon.com");
         //  homePage = new HomePage(driver);
         // HomePage homePage = new HomePage(driver);
