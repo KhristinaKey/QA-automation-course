@@ -8,6 +8,7 @@ import java.lang.reflect.Constructor;
 
 public class PageFactory {
 
+    //TODO please fix formatting below
     public static <T extends Page>T newPage(RemoteWebDriver driver, Class<T> clazz) throws Exception {
     return getNewInstance(driver, clazz);
     }
