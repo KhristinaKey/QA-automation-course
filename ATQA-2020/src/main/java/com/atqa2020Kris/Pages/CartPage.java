@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class CartPage extends Page{
 
+    //TODO we don't use Header here so no need to include it
     public Header header;
 
     private static String CART_PAGE_TITLE = "Your Amazon Cart is empty";
@@ -15,6 +16,7 @@ public class CartPage extends Page{
         this.header = new Header(driver);
     }
 
+    //TODO if this is not required, please remove it
     //span[contains(text(),'Sign up now')]
 
 }
