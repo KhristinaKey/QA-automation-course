@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BlogPage extends Page{
 
+    //TODO is there's a reason to including Footer in this page?
     public Footer footer;
     private static String BLOG_PAGE_TITLE = "Who We Are";
     private String blogPageTitleLocator = "//a[contains(text(),'Blog')]";
