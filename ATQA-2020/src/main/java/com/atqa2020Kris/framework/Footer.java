@@ -9,6 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Footer {
     protected RemoteWebDriver driver;
+    //TODO I do believe that this locator rather for a Link then for a Page Title, please rename
     private String blogPageTitleLocator = "//a[contains(text(),'Blog')]";
     private String helpPageTitleLocator = "//a[contains(text(),'Help')]";
 
