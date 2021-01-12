@@ -10,7 +10,7 @@ public abstract class Page {
     public Page(final RemoteWebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 30);
-
+//TODO please remove redundant empty lines
 
     }
 }
