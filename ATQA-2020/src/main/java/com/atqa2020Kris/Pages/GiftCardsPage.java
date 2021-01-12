@@ -5,6 +5,7 @@ import com.atqa2020Kris.framework.Header;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class GiftCardsPage extends Page{
+    //TODO header is not required here
     public Header header;
     private String giftCardsPageTitleLocator = "//a[contains(text(),'Gift Cards')]";
 
