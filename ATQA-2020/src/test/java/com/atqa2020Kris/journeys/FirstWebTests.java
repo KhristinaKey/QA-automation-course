@@ -26,8 +26,8 @@ public class FirstWebTests extends BaseTest {
     //TODO please fix formating for all methods below 
     @BeforeMethod(alwaysRun = true)
     public void setupTest() {
-        driver.get("https://amazon.com");
-        homePage = new HomePage(driver);
+    driver.get("https://amazon.com");
+    homePage = new HomePage(driver);
        }
       //  public EarlyAccessPage(RemoteWebDriver driver) { super(driver); }
 //TODO please remove all redundant commented out lines of code
@@ -62,9 +62,7 @@ public class FirstWebTests extends BaseTest {
         //Then Sign form is opened
         //TODO all interactions with the elements should be dealt on the corresponding page
         Assert.assertTrue(driver.findElement(By.xpath(")).isDisplayed());
-        //TODO please remove all System.out lines below
-        System.out.println("02_Cart_Button_Test");
-    }
+         }
 
     // 03 -------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 2)
@@ -77,8 +75,7 @@ public class FirstWebTests extends BaseTest {
         //TODO not sure how this works as helpPage is never instantiated
         //Then user is redirected to the Help Page.
         Assert.assertTrue(helpPage.isTitleCorrect(),"Title is not correct!!!");
-        System.out.println("03_Test");
-    }
+        }
 
     // 04 -------------------------------------------------------------
     @Test(groups = "main", suiteName = "ui", priority = 3)
@@ -91,8 +88,7 @@ public class FirstWebTests extends BaseTest {
         //TODO not sure how this works as blogPage is never instantiated
         //Then user is redirected to the Blog Page.
         Assert.assertTrue(blogPage.isTitleCorrect(), "Title is not correct!!!!");
-        System.out.println("04_Test");
-    }
+        }
 
 
     // 05 --------------------------------------------------------------
@@ -107,8 +103,7 @@ public class FirstWebTests extends BaseTest {
         //Then the Gift Cards list Page is opened
         //TODO not sure how this works as giftCardsPage is never instantiated
         Assert.assertTrue(giftCardsPage.isTitleCorrect(),"Title is not correct!!!");
-        System.out.println("05_Test");
-    }
+        }
 
    /* @AfterMethod(alwaysRun = true)
     public void tearDown() {
