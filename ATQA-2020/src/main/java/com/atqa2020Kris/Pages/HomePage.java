@@ -13,7 +13,7 @@ public class HomePage extends Page {
         this.header = new Header(driver);
         this.footer = new Footer(driver);
     }
-     public <T extends Page> T clickOnButton(Class<DealsAndPromotionsPage> clazz, DealsAndPromotionsPage dealsAndPromotions) {
+    public <T extends Page> T clickOnButton(Class<DealsAndPromotionsPage> clazz, DealsAndPromotionsPage dealsAndPromotions) {
         return header.setDealsAndPromotions(dealsAndPromotions).clickOnDealsButton(clazz);
     }
 
