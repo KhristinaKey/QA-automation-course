@@ -4,7 +4,7 @@ import com.atqa2020Kris.Pages.HelpPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class Footer {
+public class Footer extends GeneralElements{
 
     private String blogPageLinkLocator = "//a[contains(text(),'Blog')]";
     private String helpPageLinkLocator = "//a[contains(text(),'Help')]";

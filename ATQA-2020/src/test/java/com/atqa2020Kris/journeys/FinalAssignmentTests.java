@@ -20,8 +20,32 @@ public class FinalAssignmentTests extends BaseTest {
         //Then On the “New Releases” page verify that ALL titles of the sections presented on the page are existing in the left List of links
     }
 
-
-
-
-
+    @Test(groups = "main", suiteName = "ui", priority = 1)
+    public void v() {
+        //Given User navigate to amazon.co.uk
+        //When
+        //And
+        //Then
+    }
+    @Test(groups = "main", suiteName = "ui", priority = 2)
+    public void v() {
+        //Given User navigate to amazon.co.uk
+        //When
+        //And
+        //Then
+    }
+    @Test(groups = "main", suiteName = "ui", priority = 3)
+    public void v() {
+        //Given User navigate to amazon.co.uk
+        //When
+        //And
+        //Then
+    }
+    @Test(groups = "main", suiteName = "ui", priority = 4)
+    public void v() {
+        //Given User navigate to amazon.co.uk
+        //When
+        //And
+        //Then
+    }
 }

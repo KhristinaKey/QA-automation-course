@@ -20,6 +20,7 @@ public class FirstWebTests extends BaseTest {
         driver.get("https://amazon.com");
         homePage = new HomePage(driver);
     }
+
     @Test(groups = "main", suiteName = "ui", priority = 0)
     public void todayDealsTest() {
 
@@ -33,7 +34,7 @@ public class FirstWebTests extends BaseTest {
         }
 
     @Test(groups = "main", suiteName = "ui", priority = 1)
-    public void signButtonTest() throws Exception {
+    public void cartPageTest() throws Exception {
 
         //Given user opens a browser need provides a valid url
 
@@ -42,17 +43,17 @@ public class FirstWebTests extends BaseTest {
         //And After Opening a Cart Page click on Sign Up button.
 
         //Then Sign form is opened
-        //TODO all interactions with the elements should be dealt on the corresponding page
-        Assert.assertTrue(driver.findElement(By.xpath()).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath().isDisplayed());
     }
 
    @Test(groups = "main", suiteName = "ui", priority = 2)
-    public void setHelpPageTest() throws Exception {
+    public void helpPageTest() throws Exception {
         //Given user opens a browser nd provides a valid url
 
         //when user clicks on the Help button down the page
         helpPage = homePage.navigateToHelpPage();
         //Then user is redirected to the Help Page.
+
         Assert.assertTrue(helpPage.isTitleCorrect(), "Title is not correct!!!");
     }
 
@@ -73,6 +74,7 @@ public class FirstWebTests extends BaseTest {
         //when user clicks on the Gift Cards block on the top of page.
         giftCardsPage = homePage.navigateToGiftCardsPage();
         //Then the Gift Cards list Page is opened
+
         Assert.assertTrue(giftCardsPage.isTitleCorrect(), "Title is not correct!!!");
     }
-  }
+}
