@@ -1,14 +1,9 @@
 package com.atqa2020Kris.framework;
-
 import com.atqa2020Kris.Pages.Page;
-import com.sun.org.apache.bcel.internal.generic.RET;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 import java.lang.reflect.Constructor;
 
 public class PageFactory {
-
-    //TODO please fix formatting below
     public static <T extends Page>T newPage(RemoteWebDriver driver, Class<T> clazz) throws Exception {
     return getNewInstance(driver, clazz);
     }

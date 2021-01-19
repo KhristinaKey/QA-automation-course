@@ -20,14 +20,7 @@ public abstract class BaseTest {
         } else if (IS_OS_WINDOWS) {
             System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
         }
-
         driver = new ChromeDriver();
-       // driver.manage().window().maximize();
-        System.out.println("setup");
-        //TODO please remove redundant lines of code
-        // driver.get("https://amazon.com");
-        //  homePage = new HomePage(driver);
-        // HomePage homePage = new HomePage(driver);
     }
 
     @AfterMethod(alwaysRun = true)
