@@ -17,6 +17,9 @@ public class HomePage extends Page {
         return header.setDealsAndPromotions(dealsAndPromotions).clickOnDealsButton(clazz);
     }
 
+    public <T extends Page>T searchForItem (Class<T> clazz, String searchTerm) throws Exception {
+        return header.setSearchTerm(searchTerm).clickOnSearchButton(clazz);
+    }
     public GiftCardsPage navigateToGiftCardsPage() throws Exception {
         return header.navigateToGiftCardsPage();
     }

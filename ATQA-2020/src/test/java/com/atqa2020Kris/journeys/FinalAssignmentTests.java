@@ -3,9 +3,9 @@ package com.atqa2020Kris.journeys;
 
 import com.atqa2020Kris.BaseTest;
 import com.atqa2020Kris.Pages.AmazonGiftIdeasPage;
-import com.atqa2020Kris.Pages.AmazonHomePage;
 import com.atqa2020Kris.Pages.AmazonNewReleasesPage;
 import com.atqa2020Kris.Pages.HomePage;
+import com.atqa2020Kris.Pages.SearchResultPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -26,7 +26,8 @@ public class FinalAssignmentTests extends BaseTest {
     private String newReleasesButtonLocator = "";
     private String acceptCookiesButtonLocator = "//input[@id='sp-cc-accept";
 
-    private AmazonHomePage amazonHomePage;
+
+    private HomePage homePage;
     private AmazonNewReleasesPage amazonNewReleasesPage;
     private AmazonGiftIdeasPage amazonGiftIdeasPage;
 
@@ -38,7 +39,7 @@ public class FinalAssignmentTests extends BaseTest {
         driver.findElement(By.xpath(acceptCookiesButtonLocator)).click();
         }
 
-    private AmazonHomePage new AmazonHomePage;
+    private HomePage new HomePage;
     private AmazonNewReleasesPage new AmazonNewReleasesPage;
     private AmazonGiftIdeasPage new AmazonGiftIdeasPage;
 
@@ -46,7 +47,7 @@ public class FinalAssignmentTests extends BaseTest {
     public void mainUrlTest() throws Exception {
         //Given
         //When User on home page click on button “ALL” on the left panel
-        amazonHomePage.navigateToAllSection();
+        homePage.navigateToAllSection();
         this.wait = new WebDriverWait(driver,15);
         //And from the menu select “New Releases”
         driver.findElement(By.xpath(newReleasesButtonLocator)).click();
@@ -66,6 +67,7 @@ public class FinalAssignmentTests extends BaseTest {
     public void v() {
         //Given User navigate to amazon.co.uk
         //When User from the home page search for “go pro 4k” via search field
+        homePage.searchForItem(SearchResultPage.class, searchTerm);
         //And on the “Search results” page select Avg. Customer Review 4+ stars from the left section
         //And on the “Search results” page set min price as 100 and apply changes
         //Then verify that all updated results (except Limited deals one) have an average rating 4+ and item price is higher than 100
