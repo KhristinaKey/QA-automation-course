@@ -23,9 +23,10 @@ public class FinalAssignmentTests extends BaseTest {
     private String searchMinPriceButtonLocator = "//span[@id='a-autoid-1']";
     private String allTopMenuButtonLocator = "//select[@id='searchDropdownBox']";
     private String seeMoreButtonLocator = "/html/body/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/a/span";
-    private String newReleasesButtonLocator = "";
+    private String newReleasesButtonLocator = "//a[contains(text(),'New Releases')]";
     private String acceptCookiesButtonLocator = "//input[@id='sp-cc-accept";
-
+    private String tabletsButtonLocator = "//header/div[@id='navbar']/div[@id='nav-progressive-subnav']/div[@id='nav-subnav']/a[7]/span[1]";
+    private String primeCheckboxButtonLocator = "//body/div[@id='a-page']/div[2]/div[2]/div[2]/div[1]/div[1]/div[8]/ul[1]/li[1]/span[1]/a[1]/div[1]/label[1]/i[1]";
 
     private HomePage homePage;
     private AmazonNewReleasesPage amazonNewReleasesPage;
@@ -48,12 +49,12 @@ public class FinalAssignmentTests extends BaseTest {
     public void testCase1() throws Exception {
         //Given
         //When User on home page click on button “ALL” on the left panel
-        homePage.navigateToAllSection();
+        homePage.navigateToAllTopMenuButtonLocator();
         this.wait = new WebDriverWait(driver,15);
         //And from the menu select “New Releases”
         driver.findElement(By.xpath(newReleasesButtonLocator)).click();
         //Then On the “New Releases” page verify that ALL titles of the sections presented on the page are existing in the left List of links
-        /Assert.assertTrue(driver.findElement(By.xpath("//button[@id='addToCartButton']")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath()).isDisplayed());
     }
 
     @Test(groups = "main", suiteName = "ui", priority = 1)
@@ -80,7 +81,7 @@ public class FinalAssignmentTests extends BaseTest {
         //Given User navigate to amazon.co.uk
         //When User from the home page click on link “PC” from the Top menu
         //And on “Computers & Accessories” page click on “Monitors”
-        driver.findElement(By.xpath(allDepartmentsButtonLocator)).click();
+        driver.findElement(By.xpath(allTopMenuButtonLocator)).click();
         driver.findElement(By.xpath(computerAndAccessoriesButtonLocator)).click();
         driver.findElement(By.xpath(monitorButtonLocator)).click();
         //And on “Monitors” page click on “See more” link next to the “Top rated section”
@@ -95,8 +96,12 @@ public class FinalAssignmentTests extends BaseTest {
         //Given User navigate to amazon.co.uk
         //When User from the home page click on link “PC” from the Top menu
         //And on “Computers & Accessories” page click on “Tablets”
+        driver.findElement(By.xpath(allTopMenuButtonLocator)).click();
+        driver.findElement(By.xpath(computerAndAccessoriesButtonLocator)).click();
+        driver.findElement(By.xpath(tabletsButtonLocator)).click();
         //And on Results page select “Prime” option checkbox from the left menu
+        driver.findElement(By.xpath(primeCheckboxButtonLocator)).click();
         //Then in result list verify that all listings on the first page either have “Prime option” or “FREE Delivery” in the listing body
     }
 }
-*/
+
