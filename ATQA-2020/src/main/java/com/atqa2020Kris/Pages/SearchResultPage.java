@@ -1,7 +1,12 @@
 package com.atqa2020Kris.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SearchResultPage extends Page{
 
@@ -9,9 +14,10 @@ public class SearchResultPage extends Page{
     private String inputPriceLocator = "//input[@id='low-price']";
     private String priceSubmitButtonLocator = "//span[@class='a-button a-spacing-top-mini a-button-base s-small-margin-left']//input[@type='submit']";
     private String searchResultListLocator = "//*[@data-component-type='s-search-result']";
-    private String sponsoredLabelLocator = ".//span[@class='a-color-secondary']";
-    private String item4PlusRatingLocator = ".//i[@class='a-icon a-icon-star-small a-star-small-4-5 aok-align-bottom']";
-    private String wholePriceLocator = ".//span[@class='a-price-whole']";
+    private String sponsoredLabelLocator = "./span[@class='a-color-secondary']";
+    private String item4PlusRatingLocator = "./i[@class='a-icon a-icon-star-small a-star-small-4-5 aok-align-bottom']";
+    private String getItem5RatingLocator = "//i[@class='a-icon a-icon-star-small a-star-small-5 aok-align-bottom']";
+    private String wholePriceLocator = "./span[@class='a-price-whole']";
 
     public SearchResultPage(RemoteWebDriver driver) {
         super(driver);
@@ -27,7 +33,19 @@ public class SearchResultPage extends Page{
     }
 
     public boolean isExpectedConditionsMet() {
+        List<WebElement> elements = getElements(By.xpath(searchResultListLocator));
+        boolean result = false;
+        for(WebElement element : elements) {
 
-        return false;
+            if (!isDisplayed(element, By.xpath(sponsoredLabelLocator))) {
+                if ((!element.findElement(By.xpath(item4PlusRatingLocator)).isDisplayed() ||
+                        !element.findElement(By.xpath(getItem5RatingLocator)).isDisplayed()) &&
+                    Integer.parseInt(element.findElement(By.xpath(wholePriceLocator)).getText()) < 100) {
+                    result = false;
+                    break;
+                }
+            }
+        }
+        return result;
     }
 }

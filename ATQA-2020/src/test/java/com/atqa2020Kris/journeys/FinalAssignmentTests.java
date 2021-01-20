@@ -73,7 +73,7 @@ public class FinalAssignmentTests extends BaseTest {
         //And on the “Search results” page set min price as 100 and apply changes
         searchResultPage.selectFourPlusCustomerReviewRating().setMinimalPrice().submitPrice();
         //Then verify that all updated results (except Limited deals one) have an average rating 4+ and item price is higher than 100
-
+        Assert.assertTrue(searchResultPage.isExpectedConditionsMet(), "Expected conditions weren't met ");
     }
     @Test(groups = "main", suiteName = "ui", priority = 3)
     public void testCase4() {
