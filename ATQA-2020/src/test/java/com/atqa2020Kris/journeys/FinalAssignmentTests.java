@@ -30,21 +30,22 @@ public class FinalAssignmentTests extends BaseTest {
     private HomePage homePage;
     private AmazonNewReleasesPage amazonNewReleasesPage;
     private AmazonGiftIdeasPage amazonGiftIdeasPage;
+    private SearchResultPage searchResultPage;
 
     @BeforeMethod(alwaysRun = true)
-    public void setupTest() {
+    public void setupTest() throws Exception {
         driver.get("https://amazon.com");
 
         if (driver.findElement(By.xpath(acceptCookiesButtonLocator)).isDisplayed()) {
-        driver.findElement(By.xpath(acceptCookiesButtonLocator)).click();
+            driver.findElement(By.xpath(acceptCookiesButtonLocator)).click();
         }
-
+    }
     private HomePage new HomePage;
     private AmazonNewReleasesPage new AmazonNewReleasesPage;
     private AmazonGiftIdeasPage new AmazonGiftIdeasPage;
 
     @Test(groups = "main", suiteName = "ui", priority = 0)
-    public void mainUrlTest() throws Exception {
+    public void testCase1() throws Exception {
         //Given
         //When User on home page click on button “ALL” on the left panel
         homePage.navigateToAllSection();
@@ -56,7 +57,7 @@ public class FinalAssignmentTests extends BaseTest {
     }
 
     @Test(groups = "main", suiteName = "ui", priority = 1)
-    public void v() {
+    public void testCase2() {
         //Given User navigate to amazon.co.uk
         //When from the home page click on link “New Releases” from the Top menu
         //And from the “Hot New Releases” click on “Most Gifted” link from the top menu
@@ -64,17 +65,18 @@ public class FinalAssignmentTests extends BaseTest {
         //Then on the “Most Gifted in Books” page check ALL listings and verify that all of them have Ratings presented
     }
     @Test(groups = "main", suiteName = "ui", priority = 2)
-    public void v() {
+    public void testCase3() throws Exception {
         //Given User navigate to amazon.co.uk
         //When User from the home page search for “go pro 4k” via search field
-        homePage.searchForItem(SearchResultPage.class, searchTerm);
+        searchResultPage = homePage.searchForItem(SearchResultPage.class, searchTerm);
         //And on the “Search results” page select Avg. Customer Review 4+ stars from the left section
         //And on the “Search results” page set min price as 100 and apply changes
+        searchResultPage.selectFourPlusCustomerReviewRating().setMinimalPrice().submitPrice();
         //Then verify that all updated results (except Limited deals one) have an average rating 4+ and item price is higher than 100
 
     }
     @Test(groups = "main", suiteName = "ui", priority = 3)
-    public void v() {
+    public void testCase4() {
         //Given User navigate to amazon.co.uk
         //When User from the home page click on link “PC” from the Top menu
         //And on “Computers & Accessories” page click on “Monitors”
@@ -89,7 +91,7 @@ public class FinalAssignmentTests extends BaseTest {
 
     }
     @Test(groups = "main", suiteName = "ui", priority = 4)
-    public void v() {
+    public void testCase5() {
         //Given User navigate to amazon.co.uk
         //When User from the home page click on link “PC” from the Top menu
         //And on “Computers & Accessories” page click on “Tablets”

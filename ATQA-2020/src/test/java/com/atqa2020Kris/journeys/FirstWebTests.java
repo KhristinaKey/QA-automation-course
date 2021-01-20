@@ -1,3 +1,4 @@
+/*
 package com.atqa2020Kris.journeys;
 
 import com.atqa2020Kris.BaseTest;
@@ -77,4 +78,4 @@ public class FirstWebTests extends BaseTest {
 
         Assert.assertTrue(giftCardsPage.isTitleCorrect(), "Title is not correct!!!");
     }
-}
+}*/
