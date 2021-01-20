@@ -1,16 +1,14 @@
 package com.atqa2020Kris.Pages;
-
-import com.atqa2020Kris.framework.Footer;
-import com.atqa2020Kris.framework.Header;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class GiftCardsPage extends Page{
-    //TODO header is not required here
-    public Header header;
-    private String giftCardsPageTitleLocator = "//a[contains(text(),'Gift Cards')]";
-
+public class GiftCardsPage extends Page {
+    private String giftCardsPageLinkLocator = "//a[contains(text(),'Gift Cards')]";
+    private String GIFT_PAGE_TITLE = "Gift Cards";
     public GiftCardsPage(RemoteWebDriver driver) {
         super(driver);
-        this.header = new Header(driver);
-        }
+    }
+    public boolean isTitleCorrect() {
+        return driver.findElement(By.xpath(giftCardsPageLinkLocator)).getText().equals(GIFT_PAGE_TITLE);
+    }
 }
