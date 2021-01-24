@@ -16,6 +16,7 @@ public abstract class Page {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 3);
     }
+
     protected <T extends Page>T clickOnElement(By selector, Class<T> clazz) {
         try {
             wait.until(ExpectedCondition.visibilityOfElementLocated(selector));
