@@ -5,18 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BlogPage extends Page{
-
-    //TODO is there's a reason to including Footer in this page?
-    public Footer footer;
     private static String BLOG_PAGE_TITLE = "Who We Are";
-    private String blogPageTitleLocator = "//a[contains(text(),'Blog')]";
-
-    public BlogPage(RemoteWebDriver driver) {
+    private String blogPageLinkLocator = "//a[contains(text(),'Blog')]";
+        public BlogPage(RemoteWebDriver driver) {
         super(driver);
-        this.footer = new Footer(driver);
-    }
-
+        }
     public boolean isTitleCorrect() {
-       return driver.findElement(By.xpath(blogPageTitleLocator)).getText().equals(BLOG_PAGE_TITLE);
+       return driver.findElement(By.xpath(blogPageLinkLocator)).getText().equals(BLOG_PAGE_TITLE);
     }
 }
